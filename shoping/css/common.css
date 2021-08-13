@@ -1,0 +1,320 @@
+ @font-face {
+     font-family: 'icomoon';
+     src: url('../fonts/icomoon.eot?tomleg');
+     src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?tomleg') format('truetype'), url('../fonts/icomoon.woff?tomleg') format('woff'), url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: block;
+ }
+ 
+ .w {
+     width: 1200px;
+     margin: 0 auto;
+ }
+ 
+ .style_red {
+     color: #c81623;
+ }
+ /* .shortcut标签 */
+ 
+ .shortcut {
+     height: 31px;
+     background-color: #f1f1f1;
+     line-height: 31px;
+ }
+ 
+ .shortcut .fl {
+     float: left;
+ }
+ 
+ .shortcut .fl li {
+     float: left;
+ }
+ 
+ .shortcut .fr {
+     float: right;
+ }
+ 
+ .shortcut .fr li {
+     float: left;
+ }
+ 
+ .shortcut .fr li a {
+     padding: 0 15px;
+     border-right: 1px solid #666;
+ }
+ 
+ .shortcut .fr li:last-child a {
+     border-right: 0 solid transparent;
+ }
+ 
+ .shortcut .fr .arrow::after {
+     content: '\e91e';
+     font-family: 'icomoon';
+     margin-left: 5px;
+ }
+ /* <!-- header标签 --> */
+ 
+ header {
+     position: relative;
+     height: 105px;
+ }
+ 
+ header .logo {
+     position: absolute;
+     top: 24px;
+     width: 171px;
+     height: 61px;
+ }
+ 
+ header .logo h1 a {
+     display: block;
+     background: url(../images/logo.png) no-repeat;
+     width: 171;
+     height: 61px;
+     font-size: 0;
+ }
+ 
+ header .search {
+     position: absolute;
+     left: 50%;
+     margin-left: -269px;
+     top: 25px;
+     width: 538px;
+     height: 36px;
+     border: 2px solid #c81623;
+ }
+ 
+ header .search input[type="search"] {
+     float: left;
+     width: 454px;
+     height: 32px;
+     padding-left: 10px;
+     font-size: 14px;
+ }
+ 
+ header .search input[value] {
+     float: left;
+     margin-top: -1px;
+     position: absolute;
+     right: -1px;
+     width: 81px;
+     height: 34px;
+     background-color: #c81623;
+     color: #f1f1f1;
+ }
+ 
+ header .hotwords {
+     position: absolute;
+     left: 50%;
+     margin-left: -242px;
+     top: 69px;
+     width: 490px;
+     height: 12px;
+     font-size: 12px;
+ }
+ 
+ header .hotwords li {
+     float: left;
+     padding: 0 12px;
+ }
+ 
+ header .shopcar {
+     position: absolute;
+     right: 63px;
+     top: 50%;
+     margin-top: -18px;
+     width: 140px;
+     height: 36px;
+     background-color: #f7f7f7;
+     border: 1px solid #dfdfdf;
+     text-align: center;
+     line-height: 36px;
+ }
+ 
+ header .shopcar::before {
+     position: absolute;
+     left: 18px;
+     content: '\e93a';
+     font-family: 'icomoon';
+     color: #d84a4a;
+     font-size: 14px;
+ }
+ 
+ header .shopcar::after {
+     position: absolute;
+     right: 13px;
+     content: '\e920';
+     font-family: 'icomoon';
+ }
+ 
+ header .shopcar span {
+     position: absolute;
+     top: -5px;
+     left: 105px;
+     height: 14px;
+     background-color: #e60012;
+     border-radius: 7px 7px 7px 0;
+     padding: 0 5px;
+     line-height: 14px;
+     color: #fff;
+ }
+ 
+ .nav {
+     height: 47px;
+     border-bottom: 2px solid #b1191a;
+ }
+ 
+ .nav .dropdown {
+     float: left;
+ }
+ 
+ .nav .dropdown .dt {
+     height: 46px;
+     width: 209px;
+     line-height: 45px;
+     background-color: #b1191a;
+     text-align: center;
+     color: #fff;
+     font-size: 16px;
+ }
+ 
+ .nav .dropdown .dd {
+     /* display: none; */
+     width: 209px;
+     height: 466px;
+     background-color: #b1191a;
+ }
+ 
+ .nav .dropdown:hover .dd {
+     display: block;
+ }
+ 
+ .nav .dropdown .dd li a {
+     display: block;
+     height: 31px;
+     padding: 0 10px;
+     color: #fff;
+     line-height: 31px;
+     font-size: 14px;
+     transition: all .3s;
+ }
+ 
+ .nav .dropdown .dd li a:hover {
+     background-color: #fff;
+     color: #b1191a;
+ }
+ 
+ .nav .dropdown .dd li a::after {
+     content: '\e920';
+     font-family: 'icomoon';
+     float: right;
+ }
+ 
+ .nav .navitems {
+     float: left;
+ }
+ 
+ .nav .navitems li {
+     float: left;
+     margin: 0 11px 0 44px;
+     line-height: 47px;
+ }
+ 
+ .footer {
+     height: 417px;
+     background-color: #f5f5f5;
+ }
+ 
+ .footer .mod_service {
+     height: 109px;
+     border-bottom: 1px solid #ededed;
+ }
+ 
+ .footer .mod_service li {
+     float: left;
+     padding: 30px 0 0 35px;
+     height: 109px;
+     width: 240px;
+ }
+ 
+ .footer .mod_service li i {
+     float: left;
+     margin-right: 7px;
+     display: block;
+     width: 50px;
+     height: 50px;
+     border-radius: 25px;
+ }
+ 
+ .footer .mod_service li h4 {
+     font-size: 14px;
+     color: #333;
+     margin: 7px 0 5px 0;
+ }
+ 
+ .footer .mod_service ul li:nth-child(1) i {
+     background: url(../images/icons.png) no-repeat -252px -2px;
+ }
+ 
+ .footer .mod_service ul li:nth-child(2) i {
+     background: url(../images/icons.png) no-repeat -254px -53px;
+ }
+ 
+ .footer .mod_service ul li:nth-child(3) i {
+     background: url(../images/icons.png) no-repeat -256px -156px;
+ }
+ 
+ .footer .mod_service ul li:nth-child(4) i {
+     background: url(../images/icons.png) no-repeat -258px -156px;
+ }
+ 
+ .footer .mod_service ul li:nth-child(5) i {
+     background: url(../images/icons.png) no-repeat -257px -208px;
+ }
+ 
+ .footer .mod_help {
+     padding-top: 21px;
+     padding-left: 53px;
+     height: 187px;
+     border-bottom: 1px solid #ededed;
+     color: #333;
+ }
+ 
+ .footer .mod_help dl {
+     float: left;
+     width: 200px;
+     line-height: 21px;
+ }
+ 
+ .footer .mod_help dt {
+     font-size: 16px;
+     margin-bottom: 5px;
+ }
+ 
+ .footer .mod_help dl:last-child {
+     width: 95px;
+     text-align: center;
+ }
+ 
+ .footer .mod_copyright {
+     height: 119px;
+     text-align: center;
+     padding-top: 20px;
+     font-size: 12px;
+ }
+ 
+ .footer .mod_copyright .one {
+     height: 25px;
+     padding-left: 100px;
+ }
+ 
+ .footer .mod_copyright .one li {
+     float: left;
+     padding: 0 15px;
+     border-left: 1px solid #666;
+ }
+ 
+ .footer .mod_copyright .one li:first-child {
+     border-left: 0px solid #666;
+ }

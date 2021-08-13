@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本溢出用省略号表示</title>
+    <style>
+        div {
+            width: 100px;
+            background-color: teal;
+            margin: 50px auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        span {
+            display: block;
+            width: 100px;
+            background-color: pink;
+            margin: 50px auto;
+            /* 1. 超出的部分隐藏 */
+            overflow: hidden;
+            /* 2. 文字用省略号替代超出的部分 */
+            text-overflow: ellipsis;
+            /* 3. 弹性伸缩盒子模型显示 */
+            display: -webkit-box;
+            /* 4. 限制在一个块元素显示的文本的行数 */
+            -webkit-line-clamp: 2;
+            /* 5. 设置或检索伸缩盒对象的子元素的排列方式 */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <div>这是一个div标签这是一个div标签这是一个div标签这是一个div标签这是一个div标签</div>
+    <span>这是一个span标签这是一个span标签这是一个span标签这是一个span标签这是一个span标签</span>
+</body>
+
+</html>

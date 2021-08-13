@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东价格条</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .box {
+            position: relative;
+            width: 202px;
+            height: 30px;
+            border: 1px solid #c81623;
+            background-color: #fff;
+            margin: 100px auto;
+            line-height: 30px;
+        }
+        
+        span {
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            width: 120px;
+            height: 32px;
+            background-color: #c81623;
+            text-align: center;
+            color: #fff;
+        }
+        
+        i {
+            position: absolute;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-color: transparent #fff transparent transparent;
+            border-width: 31px 15px 0 0;
+            border-style: solid;
+        }
+        
+        .box del {
+            padding-left: 5px;
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span>￥1650
+            <i></i>
+        </span>
+        <del>￥2000</del>
+    </div>
+</body>
+
+</html>

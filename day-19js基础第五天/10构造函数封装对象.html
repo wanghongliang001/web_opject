@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function People(uname, type, blood) {
+            this.name = uname;
+            this.type = type;
+            this.blood = blood;
+            this.attack = function(attack) {
+                console.log(attack);
+            }
+        }
+        var lianpo = new People('廉颇', '力量型', '500血量', '攻击');
+        console.log(lianpo.name);
+        console.log(lianpo.type);
+        console.log(lianpo.blood);
+        lianpo.attack('近战')
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

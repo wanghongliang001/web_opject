@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 边界符^开头$结尾
+        var rg = /abc/
+        console.log(rg.test('abc')); //true
+        console.log(rg.test('aabc')); //true
+        console.log(rg.test('abcd')); //true
+        console.log('-------------------');
+
+
+        var reg = /^abc/
+        console.log(reg.test('abc')); //true
+        console.log(reg.test('aabc')); //false
+        console.log(reg.test('abcd')); //true
+        console.log('-------------------');
+
+        var reg = /^abc$/
+        console.log(reg.test('abc')); //true
+        console.log(reg.test('aabc')); //false
+        console.log(reg.test('abcd')); //false
+        console.log(reg.test('abcabc')); //false
+    </script>
+</body>
+
+</html>

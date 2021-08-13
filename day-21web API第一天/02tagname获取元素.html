@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>这是一个li</li>
+        <li>这是一个li</li>
+        <li>这是一个li</li>
+        <li>这是一个li</li>
+        <li>这是一个li</li>
+    </ul>
+    <script>
+        // getElementsByTagName返回的是获取过来对象的集合，以伪数组的形式进行储存，不管数组多少，都是数组形式，空对象就是空数组
+        var lis = document.getElementsByTagName('li')
+        console.log(lis);
+        console.log(lis[0]);
+        for (i = 0; i < lis.length; i++) {
+            console.log(lis[i]);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">这是div标签</div>
+    <div class="box">这是div标签</div>
+    <div id="names">这是id选择器</div>
+    <ul>
+        <li>这是li标签</li>
+        <li>这是li标签</li>
+    </ul>
+    <script>
+        var cla = document.getElementsByClassName('box') //返回伪数组
+        console.log(cla);
+        var names = document.querySelector('#names') //返回的是对象
+        console.log(names);
+        var box = document.querySelectorAll('.box')
+        console.log(box);
+    </script>
+</body>
+
+</html>

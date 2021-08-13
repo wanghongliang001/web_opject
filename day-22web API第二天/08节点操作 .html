@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <span>这是一个span标签</span>
+        <span>这是一个span标签</span>
+        <span>这是一个span标签</span>
+    </div>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ol>
+    <script>
+        //获取父节点 找不到则返回null
+        var span = document.querySelector('span')
+        console.log(span.parentNode);
+
+        //获取字节点 childNodes获得所有子节点包含元素节点和文本节点 不推荐使用
+        var div = document.querySelector('div')
+        console.log(div.childNodes);
+
+        //获取字节点 children只获取元素节点
+        var div = document.querySelector('div')
+        console.log(div.children);
+
+        //获取子节点中的第一个和最后一个
+        var ol = document.querySelector('ol')
+        console.log(ol.children[0]);
+        console.log(ol.children[ol.children.length - 1]);
+    </script>
+</body>
+
+</html>

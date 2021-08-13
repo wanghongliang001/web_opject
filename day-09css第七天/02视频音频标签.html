@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音频标签</title>
+    <style>
+        div {
+            margin: 100px auto;
+        }
+        
+        video {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 视频标签 src后面加地址 autoplay自动播放 controls出现控件（比如播放 暂停） loop循环播放 muted静音播放谷歌设置这个才能使用视频标签 preload是否默认或者被加载 -->
+    <div><video src="../images/mi.mp4" autoplay="autoplay" muted="muted" controls="controls" loop></video></div>
+    <!-- 音频标签 src后面加地址 autoplay自动播放 controls出现控件（比如播放 暂停） loop循环播放 muted静音播放谷歌设置这个才能使用视频标签 -->
+    <audio src="../images/music.mp3" autoplay controls loop muted></audio>
+</body>
+
+</html>

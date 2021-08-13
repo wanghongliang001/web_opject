@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = [1, 2, 3, 4, 5];
+        //splice()只跟一个参数 索引号后的全部删除
+        console.log(arr.splice(3)); //[4,5]
+        console.log(arr); //[1,2,3]
+
+        var arr1 = [2, 454, 65, 76, 7, 8, 4];
+        //splice()只跟两个参数 删除索引号的起第二个参数是删几个
+        console.log(arr1.splice(3, 5)); //[76, 7, 8, 4]
+        console.log(arr1); //[2, 454, 65]
+
+        var arr2 = [2, 454, 65, 76, 7, 8, 4];
+        //splice()只跟两个以上参数 删除索引号的起始，第三个参数是增加
+        console.log(arr2.splice(3, 5, 9, 23)); //[76, 7, 8, 4]
+        console.log(arr2); //[2, 454, 65， 9, 23]
+
+        // 数组转换成字符串类型
+        var arr3 = [2, 454, 65, 76, 7, 8, 4];
+        // console.log(arr3.toString());
+        arr3.join()
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

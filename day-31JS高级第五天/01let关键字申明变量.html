@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var关键字是全局变量除了在函数内部，let关键字只要在花括号里面都是局部变量
+        for (var i = 0; i < 2; i++) {
+
+        }
+        console.log(i); //2
+        // for (let j = 0; j < 2; j++) {
+
+        // }
+        // console.log(j); //undifent
+
+        // var关键字是有变量提升，let关键字没有
+        // console.log(a); //undifend
+        // var a = 10;
+        // console.log(b); //报错
+        // var b = 10;
+
+        var c = 20
+            // 当大括号里面有let关键字就会和大括号绑定， 变量就会在大括号里面查找
+        if (true) {
+            console.log(c);
+            let c = 0
+        }
+    </script>
+</body>
+
+</html>

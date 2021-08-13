@@ -1,0 +1,56 @@
+.nav .dropdown .dd {
+    display: none;
+}
+
+.sk {
+    position: absolute;
+    top: 40px;
+    left: 197px;
+    padding: 3px 0 3px 13px;
+    box-sizing: content-box;
+    width: 57px;
+    height: 26px;
+    border-left: 1px solid #b1191a;
+}
+
+.nav {
+    line-height: 47px;
+}
+
+.nav .left {
+    float: left;
+}
+
+.nav .left li {
+    float: left;
+    margin: 0 29px 0 26px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.nav .right {
+    float: left;
+}
+
+.nav .right li {
+    float: left;
+    margin: 0 15px 0 30px;
+}
+
+.sk_container .sk_hd {
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.sk_container .sk_bd ul {
+    width: 1213px;
+}
+
+.sk_container .sk_bd li {
+    float: left;
+    width: 290px;
+    height: 458px;
+    background: teal;
+    margin: 12px 13px 0 0;
+}

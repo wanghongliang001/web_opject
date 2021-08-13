@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var obj = {
+            uname: '陈鑫',
+            age: 20,
+            maj: {
+                sex: '男'
+            }
+        }
+        var o = {}
+        for (var k in obj) {
+            var item = obj[k]
+            if (item instanceof Array) {
+                o[k] = []
+                deepCopy(o[k], item)
+            } else if (item instanceof Object) {
+                o[k] = {};
+                // deepCopy(o[k], item)
+            } else {
+                o[k] = item
+            }
+
+        }
+
+        console.log(obj);
+        console.log(o);
+    </script>
+</body>
+
+</html>

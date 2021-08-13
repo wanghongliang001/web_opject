@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function countdown(time) {
+            var date = +new Date(); //获取当前时间毫秒
+            var future = +new Date(time) //获取未来时间毫秒
+            var times = (future - date) / 1000; //剩余总的秒数
+            var d = parseInt((times / 60 / 60 / 24)) //天
+            var h = parseInt((times / 60 / 60 % 24)) //时
+            var m = parseInt((times / 60 % 60)) //分
+            var s = parseInt((times % 60)) //秒
+            return d + '天 ' + h + ':' + m + ':' + s
+        }
+        var result = countdown('2021-11-11 8:8:8')
+        console.log(result);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

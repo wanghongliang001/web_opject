@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            top: 0;
+            width: 300px;
+            height: 300px;
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <div>我是一个div</div>
+    <button class="one">800</button>
+    <button class="two">1000</button>
+    <script>
+        var one = document.querySelector('.one')
+        var two = document.querySelector('.two')
+        var div = document.querySelector('div')
+
+        function animate(obj, target, callback) {
+            // 当我们不断的点击按钮，这个元素的速度会越来越快，因为开启了太多的定时器
+            // 解决方案就是 让我们元素只有一个定时器执行
+            // 先清除以前的定时器，只保留当前的一个定时器执行
+            clearInterval(obj.timer);
+            var now = obj.offsetLeft;
+            obj.timer = setInterval(function() {
+                var step = (target - now) / 10;
+                console.log(step);
+                // console.log(target + '---------------' + obj.offsetLeft + '-------------' + step);
+                step = step > 0 ? Math.ceil(step) : Math.floor(step)
+                if (now == target) {
+                    // 停止动画 本质是停止定时器
+                    clearInterval(obj.timer);
+                    if (callback) {
+                        callback()
+                    }
+                }
+                console.log(now);
+                now = now + step
+                obj.style.left = now + 'px';
+
+            }, 15);
+        }
+        // animate(div, 1200)
+        //匀速动画是offsetLeft加一个固定值
+        //缓动动画是offsetLeft加一个公式(不固定的值)
+        one.addEventListener('click', function() {
+            animate(div, 500)
+
+        })
+        two.addEventListener('click', function() {
+            animate(div, 800, function() {
+                div.style.backgroundColor = 'red'
+            })
+
+        })
+    </script>
+</body>
+
+</html>

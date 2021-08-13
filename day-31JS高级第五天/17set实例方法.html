@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- - add(value)：添加某个值，返回 Set 结构本身
+         - delete(value)：删除某个值，返回一个布尔值，表示删除是否成功
+         - has(value)：返回一个布尔值，表示该值是否为 Set 的成员
+         - clear()：清除所有成员，没有返回值 -->
+
+    <script>
+        let s = new Set()
+        s.add('a').add('b')
+        console.log(s);
+        console.log(s.delete('c')); //false
+        console.log(s.delete('a')); //true
+        console.log(s.has('c')); //false
+        console.log(s.has('b')); //true
+        s.clear()
+        console.log(s);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+@color:teal;
+div {
+    color: @color;
+    span {
+        color: @color;
+    }
+}
+p {
+    
+    &::before{
+        content: '这是一个为元素选择器';
+        color: @color;
+
+    }
+}

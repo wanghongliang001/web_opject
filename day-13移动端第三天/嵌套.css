@@ -1,0 +1,10 @@
+div {
+  color: teal;
+}
+div span {
+  color: teal;
+}
+p::before {
+  content: '这是一个为元素选择器';
+  color: teal;
+}

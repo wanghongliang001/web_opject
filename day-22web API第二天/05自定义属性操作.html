@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo" index="1" class="nav">12</div>
+    <script>
+        // 1获取属性值
+        var div = document.querySelector('div')
+        console.log(div.id);
+        console.log(div.getAttribute('index'));
+        console.log(div.getAttribute('class'));
+        // 2设置属性值
+        console.log(div.id = 'demon');
+        div.setAttribute('index', 3)
+            // 3移除属性
+        div.removeAttribute('index')
+    </script>
+</body>
+
+</html>

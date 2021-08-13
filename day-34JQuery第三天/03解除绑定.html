@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../day-32JQuery第一天/jquery.min.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div></div>
+    <ul>
+        <li>我们都是好孩子都会很幸福</li>
+        <li>我们都是好孩子都会很幸福</li>
+        <li>我们都是好孩子都会很幸福</li>
+    </ul>
+    <script>
+        $("div").on({
+            click: function() {
+                $(this).css('background', 'yellow')
+            },
+            mouseover: function() {
+                $(this).css('background', 'teal')
+            },
+            mouseout: function() {
+                $(this).css('background', 'green')
+            }
+        })
+        $("ul").on('click', 'li', function() {
+            alert(11)
+        })
+
+        // $('div').off()
+        $('div').off('mouseover')
+        $('ul').off('click', 'li')
+        $('div').one('click', function() {
+            alert(11)
+        })
+    </script>
+</body>
+
+</html>

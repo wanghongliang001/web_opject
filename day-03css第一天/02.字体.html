@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 100px;
+        }
+        /* 标题选择器 */
+        
+        p {
+            color: blue;
+            /* 综合写法 font-style font-weight font-size/line-weight font-family */
+            font: italic 700 20px/26px "Microsoft YaHei";
+        }
+        
+        div {
+            color: darkslategrey;
+            font-size: 29px;
+        }
+        
+        .green {
+            color: green;
+        }
+        /* 类选择器 */
+        
+        .blue {
+            color: blue;
+            background-color: blue
+        }
+        
+        .red {
+            background-color: red;
+        }
+        /* id选择器 */
+        
+        #pink {
+            color: pink;
+            font-size: 20px;
+        }
+        
+        body {
+            font-family: 宋体, "Microsoft YaHei", Arial;
+            font-size: 25px;
+        }
+        
+        h4 {
+            font-weight: 400;
+        }
+        
+        em {
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h4>标签选择器</h4>
+    <p>男生</p>
+    <p>男生</p>
+    <p>男生</p>
+    <p>男生</p>
+    <div>女生</div>
+    <div>女生</div>
+    <div>女生</div>
+    <div><em>女生</em></div>
+    <h4>类选择器</h4>
+    <ul>
+        <li class="green">男生</li>
+        <li>男生</li>
+        <li>
+            <h3 id="pink">男生</h3>
+        </li>
+        <li>男生</li>
+        <li class="blue">男生</li>
+        <li id="pink">男生</li>
+    </ul>
+    <h4>多类名标签</h4>
+
+
+    <div class="red box"><a href="#">百度</a></div>
+    <div class="blue box">这是一个div标签</div>
+    <div class="red box">这是一个div标签</div>
+
+</body>
+
+</html>

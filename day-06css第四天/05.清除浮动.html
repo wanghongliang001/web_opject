@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动</title>
+    <style>
+        .clearfix::before,
+        .clearfix::after {
+            content: "";
+            display: table;
+        }
+        
+        .clearfix::after {
+            clear: both;
+        }
+        /* 清除浮动 ：after伪元素 */
+        /* .clearfix::after {
+            content: " ";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            height: 0;
+        }
+        
+        .clearfix::after {
+            zoom: 1;
+        } */
+        
+        .box {
+            background-color: green;
+            /* 清除浮动 给父级元素添加overflow：hidden */
+            /* overflow: hidden; */
+        }
+        
+        .one {
+            background-color: teal;
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+        
+        .two {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            float: left;
+        }
+        /* 清除浮动 额外标签法 */
+        /* .clear {
+            clear: both;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="box clearfix">
+        <div class="one">1</div>
+        <div class="two">1</div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>

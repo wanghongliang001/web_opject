@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [12, 34, 564, 26, 90]
+        var falg = arr.some(function(value) {
+            return value > 20
+        })
+        console.log(falg);
+        // 遇到true就不便利后面的数组
+        var falg1 = arr.every(function(value) {
+            return value > 20
+        })
+        console.log(falg1);
+    </script>
+</body>
+
+</html>

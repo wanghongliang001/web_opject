@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../day-32JQuery第一天/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <script>
+        var arr = ['red', 'green', 'blue']
+        var result = 0
+        $('div').each(function(index, domEle) {
+            //index第一个参数一定是元素的索引号，第二个参数是DOM元素对象
+            // console.log(index);
+            // console.log(domEle);
+            $(domEle).css('color', arr[index])
+            num = parseInt($(domEle).html())
+            result += num
+
+        })
+        console.log(result);
+    </script>
+</body>
+
+</html>

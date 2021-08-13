@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var rg = /abc/ //只有包含abc就可以了
+        console.log(rg.test('aabc')); //true
+        console.log(rg.test('aabc')); //true
+        console.log(rg.test('aabc')); //true
+        console.log('--------------');
+
+        var rg1 = /[abc]/ //只有包含abc其中一个就可以了
+        console.log(rg1.test('aabc')); //true
+        console.log(rg1.test('color')); //true
+        console.log(rg1.test('red')); //false
+        console.log('--------------');
+
+        var rg2 = /^[abc]$/ //只能包含abc其中一个
+        console.log(rg2.test('aabc')); //false
+        console.log(rg2.test('color')); //false
+        console.log(rg2.test('red')); //false
+        console.log(rg2.test('a')); //true
+        console.log('--------------');
+
+
+        var rg3 = /^[a-z]$/ //只有包含abc其中一个就可以了
+        console.log(rg3.test('a')); //true
+        console.log(rg3.test('c')); //true
+        console.log(rg3.test('A')); //false
+        console.log('--------------');
+
+        var rg4 = /^[a-zA-Z0-9]$/ //字符组合
+        console.log(rg4.test('a')); //true
+        console.log(rg4.test('c')); //true
+        console.log(rg4.test('A')); //true
+        console.log(rg4.test('！')); //false
+        console.log('--------------');
+
+
+        var rg4 = /^[^a-zA-Z0-9]$/ //^写在【】里面表示取反
+        console.log(rg4.test('a')); //false
+        console.log(rg4.test('c')); //false
+        console.log(rg4.test('A')); //false
+        console.log(rg4.test('！')); //true
+    </script>
+</body>
+
+</html>

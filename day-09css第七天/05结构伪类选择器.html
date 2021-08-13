@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child {
+            color: red;
+        }
+        
+        ul li:last-child {
+            list-style: none;
+        }
+        
+        ul li:nth-child(5) {
+            background-color: teal;
+        }
+        
+        ol li:nth-child(even) {
+            background: gray;
+        }
+        
+        ol li:nth-child(odd) {
+            background-color: #fff;
+        }
+        
+        ol li:nth-child(n) {
+            list-style: none;
+            line-height: 25px;
+        }
+        
+        ol li:nth-child(2n) {
+            color: green;
+        }
+        
+        ol li:nth-child(2n+1) {
+            color: hotpink;
+        }
+        
+        ol li:nth-child(n+5) {
+            background-color: lightskyblue;
+        }
+        
+        ol li:nth-child(-n+5) {
+            background-color: gold;
+        }
+        
+        ol li:nth-child(5n) {
+            font-size: 25px;
+        }
+        
+        div span:nth-of-type(n) {
+            background-color: peru;
+        }
+        
+        div span:nth-of-type(2) {
+            background-color: lightseagreen;
+        }
+        
+        div span:nth-child(1) {
+            background-color: magenta;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+    <ol>
+        <li>这是第1li</li>
+        <li>这是第2li</li>
+        <li>这是第3li</li>
+        <li>这是第4li</li>
+        <li>这是第5li</li>
+        <li>这是第6li</li>
+        <li>这是第7li</li>
+        <li>这是第8li</li>
+        <li>这是第9li</li>
+        <li>这是第10li</li>
+        <li>这是第11li</li>
+        <li>这是第12li</li>
+        <li>这是第13li</li>
+        <li>这是第14li</li>
+        <li>这是第15li</li>
+        <li>这是第16li</li>
+        <li>这是第17li</li>
+        <li>这是第18li</li>
+        <li>这是第19li</li>
+        <li>这是第20li</li>
+    </ol>
+    <div>
+        <p>这是一个p标签</p>
+        <span>这是一个span标签</span>
+        <span>这是一个span标签</span>
+        <span>这是一个span标签</span>
+    </div>
+    <!-- div span:nth-of-type(n) {
+        background-color: peru;
+    }
+    
+    div span:nth-of-type(2) {
+        background-color: lightseagreen;
+    }
+    
+    div span:nth-child(1) {
+        background-color: magenta;
+    } -->
+
+</body>
+
+</html>

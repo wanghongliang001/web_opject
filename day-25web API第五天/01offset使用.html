@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .father {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            margin: 150px;
+        }
+        
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            margin: 50px;
+        }
+        
+        .w {
+            padding: 50px;
+            border: 10px solid teal;
+            width: 200px;
+            height: 200px;
+            background-color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <div class="w"></div>
+    <script>
+        var father = document.querySelector('.father')
+        var son = document.querySelector('.son')
+        var w = document.querySelector('.w')
+        console.log(father.offsetTop);
+        console.log(father.offsetLeft);
+
+        // 以父级带定位的盒子
+        console.log(son.offsetTop);
+        console.log(son.offsetLeft);
+
+        console.log(w.offsetWidth);
+        console.log(w.offsetHeight);
+
+        console.log(son.offsetParent);
+    </script>
+</body>
+
+</html>

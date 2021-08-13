@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const a = 10;
+        // a = 0
+        // console.log(a);
+        // 具有块级作用域， 赋值后不可以替换、修改
+        if (true) {
+            const b = 1
+            console.log(b);
+            if (true) {
+                const b = 10
+                console.log(b);
+            }
+
+        }
+        // console.log(b);块级作用域访问不到
+
+        const arr = [1, 23, 4]
+        arr[0] = 123
+        console.log(arr); //可以修改数组的值 都是不可以修改数组本身
+        arr = [1, 2, 34, ]
+        console.log(arr);
+    </script>
+</body>
+
+</html>

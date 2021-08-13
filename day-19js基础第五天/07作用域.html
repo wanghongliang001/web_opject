@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num1 = 33;
+
+        function fn1() {
+            var num = 22;
+            num2 = 44; //在函数里面没有用var声明，直接赋值的变量也是全局变量
+            console.log(num);
+            console.log(33);
+        }
+        fn1();
+        console.log(num2);
+
+        console.log(num);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

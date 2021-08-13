@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var number01 = parseFloat(prompt('请输入第一个数'));
+        var number02 = parseFloat(prompt('请输入第二个数'));
+
+        function get_sum(n1, n2) {
+            result = 0;
+            if (n1 > n2) {
+                for (i = n2; i <= n1; i++) {
+                    result = result + i;
+
+                }
+            } else {
+                for (i = n1; i <= n2; i++) {
+                    result = result + i;
+
+                }
+            }
+            alert(result)
+        }
+        get_sum(number01, number02);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

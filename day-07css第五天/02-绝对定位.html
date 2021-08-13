@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        .son {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+        }
+        
+        .father {
+            position: absolute;
+            top: 10px;
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+        
+        .grandfather {
+            position: relative;
+            margin: 0 auto;
+            height: 500px;
+            width: 500px;
+            background-color: chartreuse;
+        }
+        
+        span {
+            display: block;
+            width: 800px;
+            height: 20px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grandfather">
+        <div class="father">
+            <div class="son"></div>
+        </div>
+        <span></span>
+    </div>
+</body>
+
+</html>

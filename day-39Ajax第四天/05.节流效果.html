@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../day-32JQuery第一天/jquery.min.js"></script>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        #angel {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./angel.gif" alt="" id="angel">
+    <script>
+        var timer = null //预定一个节流阀
+        $(document).on('mousemove', function(e) {
+            setTimeout(function() {
+                if (timer) {
+                    return
+                }
+                $('#angel').css('top', e.pageY + 'px').css('left', e.pageX + 'px')
+                console.log('ok');
+                timer = null
+            }, 16)
+
+        })
+    </script>
+</body>
+
+</html>

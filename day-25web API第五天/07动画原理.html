@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: teal;
+            position: absolute;
+            top: 10;
+            width: 300px;
+            height: 300px;
+        }
+        
+        span {
+            position: absolute;
+            top: 330px;
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button>按钮</button>
+    <div></div>
+    <span></span>
+    <script>
+        var div = document.querySelector('div')
+        var span = document.querySelector('span')
+        var btn = document.querySelector('button')
+
+        function fn(obj, num) {
+            clearInterval(obj.timer)
+
+            obj.timer = setInterval(function() {
+                if (obj.offsetLeft >= num) {
+                    clearInterval(obj.timer)
+                } else {
+                    obj.style.left = obj.offsetLeft + 1 + 'px'
+                }
+            }, 1)
+        }
+        btn.addEventListener('click', function() {
+            fn(span, 400)
+        })
+    </script>
+</body>
+
+</html>

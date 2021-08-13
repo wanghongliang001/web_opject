@@ -1,0 +1,332 @@
+.main {
+    height: 880px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.main .focus {
+    position: relative;
+    float: left;
+    height: 455px;
+    width: 721px;
+}
+
+.main .focus span {
+    position: absolute;
+    font-family: 'icomoon';
+    top: 50%;
+    margin-top: -25px;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.main .focus .left {
+    left: 20px;
+}
+
+.main .focus .right {
+    right: 20px;
+}
+
+.main .focus ul {
+    padding-top: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 10px;
+    height: 20px;
+    width: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.main .focus ul li {
+    float: left;
+    margin: 0 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.main .focus ul .red {
+    background-color: #c81623;
+}
+
+.main .newsfalsh {
+    float: right;
+    height: 455px;
+    width: 250px;
+}
+
+.main .newsfalsh .news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.main .newsfalsh .news .hd {
+    padding: 0 15px;
+    height: 34px;
+    border-bottom: 1px dashed #e8e8e7;
+    line-height: 33px;
+    font-size: 14px;
+    color: #333;
+}
+
+.main .newsfalsh .news .hd h4 {
+    float: left;
+    font-weight: 400;
+}
+
+.main .newsfalsh .news .hd a {
+    float: right;
+}
+
+.main .newsfalsh .news .hd a::after {
+    content: '\e920';
+    font-family: 'icomoon';
+    margin-left: 3px;
+}
+
+.main .newsfalsh .news .bd {
+    padding: 7px 15px 0;
+}
+
+.main .newsfalsh .news .bd li {
+    height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(2) {
+    position: relative;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(2)::before {
+    position: absolute;
+    content: '减';
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #589d5a;
+    color: #fff;
+    font-size: 12px;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(2)::after {
+    position: absolute;
+    content: '';
+    top: 16px;
+    right: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-left: 8px solid #589d5a;
+    border-right: 8px solid #589d5a;
+    border-bottom: 8px solid transparent;
+}
+
+.main .newsfalsh .lifeservice {
+    height: 210px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.main .newsfalsh .lifeservice ul {
+    width: 257px;
+}
+
+.main .newsfalsh .lifeservice li {
+    float: left;
+    height: 70px;
+    width: 64px;
+    border-right: 1px solid #e8e8e7;
+    border-bottom: 1px solid #e8e8e7;
+    text-align: center;
+}
+
+.main .newsfalsh .lifeservice li i {
+    display: block;
+    margin: 10px auto 5px;
+    width: 25px;
+    height: 25px;
+    background: url(../images/icons.png) no-repeat -16px -15px;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(2) i {
+    background: url(../images/icons.png) no-repeat -77px -15px;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(3) i {
+    background: url(../images/icons.png) no-repeat -140px -15px;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(4) i {
+    background: url(../images/icons.png) no-repeat -205px -15px;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(5) i {
+    background: url(../images/icons.png) no-repeat -16px -87px;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(6) i {
+    background: url(../images/icons.png) no-repeat -77px -87px;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(7) i {
+    background: url(../images/icons.png) no-repeat -140px -87px;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(8) i {
+    background: url(../images/icons.png) no-repeat -206px -87px;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(9) i {
+    background: url(../images/icons.png) no-repeat -17px -158px;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(10) i {
+    background: url(../images/icons.png) no-repeat -77px -158px;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(11) i {
+    background: url(../images/icons.png) no-repeat -140px -158px;
+}
+
+.main .newsfalsh .lifeservice li:nth-child(12) i {
+    background: url(../images/icons.png) no-repeat -205px -158px;
+}
+
+.main .newsfalsh .bargain {
+    margin-top: 5px;
+    height: 75px;
+}
+
+.main .newsfalsh .bargain img {
+    width: 100%;
+}
+
+.recommend {
+    margin-top: 10px;
+    height: 163px;
+    background-color: #ebebeb;
+}
+
+.recommend .left {
+    float: left;
+    width: 206px;
+}
+
+.recommend .left a {
+    display: block;
+    height: 163px;
+    background: #5c5251 url(../images/recom.png) no-repeat center;
+}
+
+.recommend .right {
+    float: left;
+}
+
+.recommend .right li {
+    position: relative;
+    float: left;
+    width: 248px;
+    height: 163px;
+}
+
+.recommend .right li:nth-child(-n+3)::after {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 143px;
+    background-color: #ddd;
+}
+
+.floor .box-hd {
+    margin-top: 30px;
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.floor .box-hd h4 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+}
+
+.floor .box-hd ul {
+    float: right;
+    margin-top: 5px;
+}
+
+.floor .box-hd ul li {
+    float: left;
+    padding: 0 15px;
+}
+
+.floor .box-hd ul li:nth-child(-n+8) {
+    border-right: 1px solid #666;
+}
+
+.box-bd .table_item .col-209 {
+    width: 209px;
+    background-color: #f9f9f9;
+}
+
+.col-329 {
+    width: 329px;
+}
+
+.col-219 {
+    width: 220px;
+}
+
+.col-224 {
+    width: 221px;
+}
+
+.box-bd .table_item>div {
+    float: left;
+    height: 360px;
+}
+
+.col-209 .content_hd {
+    padding-left: 10px;
+}
+
+.col-209 .content_hd li {
+    margin-left: 12px;
+    float: left;
+    height: 33px;
+    width: 86px;
+    border-bottom: 1px solid #ededed;
+    line-height: 32px;
+    text-align: center;
+}
+
+.col-209 .content_bd {
+    text-align: center;
+    padding-top: 16px;
+}
+
+.table_item>div:nth-child(n+3) a {
+    display: block;
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+
+.box-bd .brand {
+    height: 65px;
+    margin: 20px 0;
+}

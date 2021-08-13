@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: seagreen;
+            animation-name: move;
+            animation-duration: 10s;
+        }
+        
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+                background-color: skyblue;
+                border-radius: 0;
+            }
+            25% {
+                transform: translate(1200px, 0) rotate(360deg);
+                background-color: springgreen;
+                border-radius: 0 100px 0 0;
+            }
+            50% {
+                transform: translate(1200px, 500px);
+                background-color: violet;
+                border-radius: 0 100px 100px 0;
+            }
+            75% {
+                transform: translate(0px, 500px) rotate(360deg);
+                background-color: yellow;
+                border-radius: 0 100px 100px 100px;
+            }
+            100% {
+                transform: translateX(0, 0);
+                background-color: tomato;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

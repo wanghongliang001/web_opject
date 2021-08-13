@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        li {
+            color: blue;
+        }
+        
+        .list ul li {
+            color: red;
+        }
+        
+        .list ul #gray {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>基础选择器</h3>
+    <div>
+        <ul>
+            <li>标签选择器</li>
+            <li>类选择器</li>
+            <li>id 选择器</li>
+            <li>通配符选择器</li>
+            <p>我是一个p标签</p>
+            <p>我是一个p标签</p>
+            <p>我是一个p标签</p>
+        </ul>
+    </div>
+    <h3>复合选择器</h3>
+    <div class="list">
+        <ul>
+            <li>后代选择器</li>
+            <li>子代选择器</li>
+            <li>并集选择器</li>
+            <li>交集选择器</li>
+            <p id="gray">我是一个p标签</p>
+            <p>我是一个p标签</p>
+            <p>我是一个p标签</p>
+
+        </ul>
+    </div>
+</body>
+
+</html>

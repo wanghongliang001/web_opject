@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .tb-promo {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            margin: 50px auto;
+        }
+        
+        .prev {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            width: 20px;
+            height: 30px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background: rgba(0, 0, 0, .3);
+            text-align: center;
+            line-height: 30px;
+        }
+        
+        .next {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -15px;
+            border-radius: 15px 0 0 15px;
+        }
+        
+        a {
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .promo-nav {
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            margin-left: -50px;
+            width: 98px;
+            height: 20px;
+            background: rgba(255, 255, 255, .3);
+            border-radius: 10px;
+        }
+        
+        .promo-nav li {
+            float: left;
+            height: 8px;
+            width: 8px;
+            margin: 8px;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+        
+        .promo-nav .selected {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo">
+        <div><img src="../images/tb.jpg" alt=""></div>
+        <div class="prev"><a href="#">&lt;</a></div>
+        <div class="next prev"><a href="#">&gt;</a></div>
+        <ul class="promo-nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </div>
+</body>
+
+</html>

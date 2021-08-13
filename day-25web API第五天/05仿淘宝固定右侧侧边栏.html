@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .slider-bar {
+            position: absolute;
+            left: 50%;
+            top: 300px;
+            margin-left: 600px;
+            width: 45px;
+            height: 130px;
+            background-color: pink;
+        }
+        
+        .w {
+            width: 1200px;
+            margin: 10px auto;
+        }
+        
+        .header {
+            height: 150px;
+            background-color: purple;
+        }
+        
+        .banner {
+            height: 250px;
+            background-color: skyblue;
+        }
+        
+        .main {
+            height: 1000px;
+            background-color: yellowgreen;
+        }
+        
+        span {
+            display: none;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider-bar">
+        <span class="goBack">返回顶部</span>
+    </div>
+    <div class="header w">头部区域</div>
+    <div class="banner w">banner区域</div>
+    <div class="main w">主体部分</div>
+    <script>
+        var bar = document.querySelector('.slider-bar')
+        var header = document.querySelector('.header')
+        var banner = document.querySelector('.banner')
+        var main = document.querySelector('.main')
+        var bannerTop = banner.offsetTop
+        var bartop = bar.offsetTop - bannerTop;
+        var mainTop =
+            document.addEventListener('scroll', function() {
+                // window.pageYOffset 页面被卷去的头部
+                // console.log(window.pageYOffset);
+                if (window.pageYOffset >= bannerTop) {
+                    bar.style.position = 'fixed'
+                    bar.style.top = bartop + 'px'
+                } else {
+                    bar.style.position = 'absolute'
+                    bar.style.top = '300px'
+
+                }
+                if (window.pageYOffset >= 172)
+            })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+
+<body>
+    <form action="hdtt.html" method="GET" name="form1">
+        <!-- text文本标签 -->
+        用户名：<input type="text" name="usernam" value="yonghuming" maxlength="5"><br>
+        <!-- password密码框 -->
+        密码：<input type="password" name="password"><br><label for="nan">
+            <!-- label标签有两种写法：1，用for=x id=x -->
+        男<input type="radio" name="sex" value="man" checked="checked" id="nan"><label> 
+            <!-- label第二种写法是直接包含标签 -->
+            女<input type="radio" name="sex" value="womam"><br></label>
+
+        <!-- checkbox复选框，实现多选一 -->
+        爱好：吃饭<input type="checkbox" name="hobby" value="eat" checked="checked">睡觉：<input type="checkbox" name="hobby" value="sleep" checked="checked">打豆豆：<input type="checkbox" name="hobby" value="dadoudou"><br>
+        <input type="submit" value="提交"><input type="reset">
+        <!-- 后期搭配js使用 -->
+        <input type="button" value="普通按钮">
+        <!-- 用来上传图片或者文件的 -->
+        <input type="file" value="上传文件">
+        <!-- 以图片形式进行的提交 -->
+        <input type="image" src="images/down.jpg">
+        <!-- 下拉列表 -->
+    </form>
+</body>
+
+
+</html>
